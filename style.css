@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,500&display=swap');
+
+
+body {
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 239, 239);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(57, 57, 57);
+    position: absolute;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
+    
+    
+
+}
+
+h1{
+    font-size: 70px;
+    line-height: 60px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.square h2 {
+    margin: 50px 0 10px 0;
+    justify-content: center;
+}
+p{
+    font-size: 30px;
+}
+
+a {
+    color: rgb(1, 57, 140);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+.switch {
+    width: 80px;
+    height: 40px;
+    background-color: rgba( 39, 38,39);
+    border-radius: 20px;
+    position: relative;
+}
+
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+                inset -4px -4px 4px rgb(195 193 198 / 90);
+
+}
+
+.dark{
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+.dark > * {
+    color: white;
+}
+
+.dark .flicker{
+    transition: 0.3s;
+    transform: translateX(40px);
+}
+
+.main{
+    height: 90vh;
+    
+
+}
+
+
+.main-text {
+    height: 100vh;
+    padding: 20px;
+}
+
+.square{
+    width: 80%;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+    margin: 1%;
+    justify-content: center;
+}
+footer{
+   
+    padding: 100px 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(136, 136, 136); 
+    width: 100%;      
+      
+}
+ .dark footer{
+     background-color: black;
+ }
+
+.dark .square {
+    background-color: rgb(127, 121, 121);
+
+}
+.dark a{
+    color: darksalmon;
+}
+
+.sub-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    height: 70vh;
+    
+}
+
+.hero-image{
+    position: relative;
+    width: 50%;
+    height: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cube{
+   
+    padding: 10px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    
+    
+    right: 1px;
+    
+    
+}
+
+#Javascript {
+    right: -170px;
+}
+
+#SQL {
+
+    bottom: 25px;
+}
+
+#C {
+
+    right: -170px;
+    bottom: 25px;
+}
+
+#Linux {
+
+    right: 170px;
+    bottom: 25px;
+}
+#Python {
+    right: 170px;
+}
+
+
+
+
+
+@media only screen and (min-width: 970px) {
+    .main-text{
+        width: 50%;
+    }
+    .square{
+        width: 40%;
+        margin: 1%;
+        height: 500px;
+    }
+}
