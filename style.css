@@ -16,6 +16,7 @@ body {
     
     
     
+    
 
 }
 
@@ -104,6 +105,22 @@ header{
     margin: 1%;
     justify-content: center;
 }
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover,
+  .hvr-float:focus,
+  .hvr-float:active {
+    transform: translateY(-8px);
+  }
 footer{
    
     padding: 100px 30px;
@@ -161,19 +178,19 @@ footer{
 
 #SQL {
 
-    bottom: 25px;
+    bottom: 15px;
 }
 
 #C {
 
     right: -170px;
-    bottom: 25px;
+    bottom: 15px;
 }
 
 #Linux {
 
     right: 170px;
-    bottom: 25px;
+    bottom: 15px;
 }
 #Python {
     right: 170px;
